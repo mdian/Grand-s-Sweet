@@ -113,9 +113,10 @@ border-radius: .27rem;
 /* welcome style */
 .welcome{
     z-index: 100 !important;
-    height: 86vh;
+    /* height: 86vh; */
+    min-height: calc(100vh - 86px);
     margin-top: 12vh;
-    background:linear-gradient(rgba(0,0,0,.4	),rgba(0,0,0,.4)),url(../images/welcome.jpg)center/cover no-repeat;
+    background:linear-gradient(rgba(0,0,0,.4	),rgba(0,0,0,.4)),url(../images/welcome.jpg)center/cover no-repeat fixed;
 
     /* background:url(../images/welcome.jpg); */
 /* 
@@ -123,4 +124,7 @@ border-radius: .27rem;
     background-repeat:no-repeat;
     background-position: center; */
 
+}
+.welcome strong{
+    font-size:5rem;
 }
