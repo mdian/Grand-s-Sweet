@@ -1,0 +1,115 @@
+/* main fonts from google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+/* font-family: 'Rokkitt', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@200;300;400;500;600;700&display=swap');
+/* font-family: 'Rokkitt', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+/* font-family: 'Akaya Kanadaka', cursive; */
+
+/* h1{
+    color: var(--pink);
+}
+
+
+
+.nav-link{
+    color: var(--pink) !important;
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+}
+
+.phone .number{
+    font-weight: bold;
+} */
+
+body{
+    font-family: 'Akaya Kanadaka', cursive;
+    min-height: 3000px;
+}
+
+/* start header */
+.main-header{
+    top: 0;
+    background-color: #fff;
+}
+#header {
+    height: 12vh;
+}
+.main-icon{
+
+    width:40px;
+    height:40px
+}
+
+.navbar-toggler{
+    outline: none !important;
+    border: 0;
+}
+a.nav-link:not(a.active){
+    color: var(--pink) !important;
+    font-size: 1.6rem;
+    font-family: 'Akaya Kanadaka', cursive;
+    transition: all .3s ease-in-out;
+
+}
+a.nav-link.active{
+    color: black !important;
+    font-size: 1.6rem;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+a.nav-link:not(a.active):hover{
+    color: black !important;
+}
+.togglerIcon{
+    color: var(--pink) !important;
+    font-size: 1.6rem !important;
+}
+
+.btncard{
+    border-width: 0.15rem  !important;
+    font-size: 1.1rem !important;
+    transition: all .1s ease-in-out;
+border-radius: .27rem;
+    
+}
+.contact_number{
+    font-size: 1.3rem !important;
+    letter-spacing:.1rem
+}
+
+.btncard:hover{
+  background-color:var(--pink) !important;
+  border-color: var(--pink) !important;
+}
+@media (min-width: 768px) and (max-width:860px){
+    a.nav-link:not(a.active) {
+        font-size: 1.1rem;
+    }
+    a.nav-link.active{
+        font-size: 1.1rem;
+    }
+    .contact_number{
+        font-size: 1.2rem !important;
+        letter-spacing:0rem
+    }
+    .btncard{
+        border-width: 2px  !important;
+        font-size: 1rem !important;
+        
+    }
+}
+
+/* welcome style */
+.welcome{
+    height: 86vh;
+    margin-top: 12vh;
+    background:linear-gradient(rgba(0,0,0,.4	),rgba(0,0,0,.4)),url(../images/welcome.jpg)center/cover no-repeat fixed;
+
+    /* background:url(../images/welcome.jpg); */
+/* 
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center; */
+
+}
