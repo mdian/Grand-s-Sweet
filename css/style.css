@@ -31,13 +31,20 @@ body{
 /* start header */
 .main-header{
     top: 0;
-    background-color: #fff;
+    background-color: #fff !important;
+    z-index: 1000 !important;
+}
+@media (max-width: 768px){
+    .navbar-nav{
+      padding-top: 20px;
+        width:20vw;
+    }
 }
 #header {
     height: 12vh;
 }
 .main-icon{
-
+   
     width:40px;
     height:40px
 }
@@ -45,6 +52,9 @@ body{
 .navbar-toggler{
     outline: none !important;
     border: 0;
+}
+#navcolapse{
+    z-index: 999 !important;
 }
 a.nav-link:not(a.active){
     color: var(--pink) !important;
@@ -102,9 +112,10 @@ border-radius: .27rem;
 
 /* welcome style */
 .welcome{
+    z-index: 100 !important;
     height: 86vh;
     margin-top: 12vh;
-    background:linear-gradient(rgba(0,0,0,.4	),rgba(0,0,0,.4)),url(../images/welcome.jpg)center/cover no-repeat fixed;
+    background:linear-gradient(rgba(0,0,0,.4	),rgba(0,0,0,.4)),url(../images/welcome.jpg)center/cover no-repeat;
 
     /* background:url(../images/welcome.jpg); */
 /* 
