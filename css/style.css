@@ -23,6 +23,19 @@
     font-weight: bold;
 } */
 
+
+/* Global styles */
+
+.btn-pink{
+    color: rgb(238, 65, 94) !important;
+    border-color: rgb(243, 103, 127) !important;
+}
+.btn-pink:hover{
+    color: white !important;
+    background-color:  rgb(240, 97, 121) !important;
+}
+
+/* Global styles */
 body{
     font-family: 'Akaya Kanadaka', cursive;
     min-height: 3000px;
@@ -60,7 +73,7 @@ a.nav-link:not(a.active){
     color: var(--pink) !important;
     font-size: 1.6rem;
     font-family: 'Akaya Kanadaka', cursive;
-    transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;
 
 }
 a.nav-link.active{
@@ -128,3 +141,66 @@ border-radius: .27rem;
 .welcome strong{
     font-size:5rem;
 }
+
+
+
+
+
+
+
+/* welcome style */
+.about_text{
+    font-size: 1.3rem;
+}
+.image_welcome{
+    border: 7px solid yellow;
+    width: 23em;
+    margin: 0 auto;
+    height: 300px;
+    overflow: visible;
+ 
+}
+
+@media only screen and (max-width:890px){
+    .image_welcome{
+        border: 7px solid yellow;
+        width: 20em;
+        margin: unset !important;
+        height: 300px;
+      overflow:hidden
+     
+    }
+    .image_welcome img{
+        margin-left: 20px;
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+        transition: all 0.3s
+    }
+}
+.image_welcome img{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s
+}
+
+.image_welcome:hover img{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

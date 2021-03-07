@@ -22,17 +22,17 @@
 <body>
     <div class="main-header container-fluid position-fixed">
         <header id="header">
-            <nav class="navbar navbar-expand-md  navbar-light">
+            <nav class="navbar navbar-expand-md navbar-light">
                 <a href="#" class="navbar-brand">
-                    <img src="images/main_pic.png" alt="" class="main-icon">
+                    <img src="images/main_pic.png" alt="" class="main-icon" />
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navcolapse">
                     <span class="">
-                        <i class="fas fa-bars  togglerIcon"></i>
+                        <i class="fas fa-bars togglerIcon"></i>
                     </span>
                 </button>
 
-                <div class=" collapse navbar-collapse position-relative" id="navcolapse">
+                <div class="collapse navbar-collapse position-relative" id="navcolapse">
                     <ul class="nav navbar-nav mx-lg-auto">
                         <li class="nav-item active">
                             <a href="#" class="nav-link p-lg-3 active">Home</a>
@@ -54,8 +54,8 @@
                         <i class="fas fa-phone fa-1x pr-3 font-weight-bolder"></i>
                         <span class="contact_number font-weight-bolder">032-3234432</span>
                     </div>
-                    <button class="btncard btn btn-outline-dark  btn-sm">
-                        <i class=" fas fa-shopping-cart font-weight-bolder"></i>
+                    <button class="btncard btn btn-outline-dark btn-sm">
+                        <i class="fas fa-shopping-cart font-weight-bolder"></i>
                         <span class="font-weight-bolder">
                             <span>2</span>items- <span class="price">$10.00</span>
                         </span>
@@ -65,14 +65,16 @@
         </header>
     </div>
     <!-- START welcome section -->
-    <!-- this sectiom he but it in header section bellow nav section -->
+    <!-- this section he but it in header section bellow nav section -->
     <!-- row class by default is flex box -->
-    <!--  use strong rather then span  in some states -->
+    <!--  use strong rather than span  in some states -->
     <section
-        class=" position-relative  welcome d-flex justify-content-center align-items-center col-11 mx-auto col-md-12 text-center">
+        class="position-relative welcome d-flex justify-content-center align-items-center col-11 mx-auto col-md-12 text-center">
         <div class="">
             <div class="weclome_content text-center">
-                <h1 class="display-4 text-white text-capitalize">welcome to <strong class="text-danger">Grandma's</strong></h1>
+                <h1 class="display-4 text-white text-capitalize">
+                    welcome to <strong class="text-danger">Grandma's</strong>
+                </h1>
                 <p class="lead text-center">
                     <a class="btn btn-lg mt-3 text-dark font-weight-bolder text-uppercase btn-light" href="#"
                         role="button">Explore</a>
@@ -81,6 +83,34 @@
         </div>
     </section>
     <!-- END WELCOME SECTION -->
+    <!-- start about section -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-6 p-5 mx-auto">
+                <h2 class="text-capitalize mb-4 display-4">
+                    about <strong class="text-danger display-3">us</strong>
+                </h2>
+                <p class="about_text py-2 w-75 text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                    ab, atque quas magni tempora animi magnam laudantium eaque
+                    cupiditate recusandae.
+                </p>
+                <button class="btn btn-pink text-uppercase">explore</button>
+            </div>
+            <div class="col-12 col-md-6 p-5 mx-auto">
+                <div class="image_welcome mx-auto">
+                    <!-- you can use position relative to move this pic rather than using margin!
+                    
+                    another way:
+                    to make pesoudo element by using before or after and using position
+                    and use top left and z-index 
+                    -->
+                    <img src="images/welcome.jpg" alt="" class="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about section -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
