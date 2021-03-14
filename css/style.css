@@ -1,10 +1,10 @@
 /* main fonts from google fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 /* font-family: 'Rokkitt', serif; */
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@200;300;400;500;600;700&display=swap");
 /* font-family: 'Rokkitt', serif; */
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
 /* font-family: 'Akaya Kanadaka', cursive; */
 
 /* h1{
@@ -23,184 +23,220 @@
     font-weight: bold;
 } */
 
+/* Global styles */
+.btn {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+.btn-pink {
+  color: rgb(238, 65, 94) !important;
+  border-color: rgb(243, 103, 127) !important;
+}
+.btn-pink:hover {
+  color: white !important;
+  background-color: rgb(240, 97, 121) !important;
+}
 
 /* Global styles */
-
-.btn-pink{
-    color: rgb(238, 65, 94) !important;
-    border-color: rgb(243, 103, 127) !important;
-}
-.btn-pink:hover{
-    color: white !important;
-    background-color:  rgb(240, 97, 121) !important;
+body {
+  font-family: "Akaya Kanadaka", cursive;
+  min-height: 3000px;
 }
 
-/* Global styles */
-body{
-    font-family: 'Akaya Kanadaka', cursive;
-    min-height: 3000px;
-}
 
 /* start header */
-.main-header{
-    top: 0;
-    background-color: #fff !important;
-    z-index: 1000 !important;
+.main-header {
+  top: 0;
+  background-color: #fff !important;
+  z-index: 1000 !important;
 }
-@media (max-width: 768px){
-    .navbar-nav{
-      padding-top: 20px;
-        width:20vw;
-    }
+@media (max-width: 768px) {
+  .navbar-nav {
+    padding-top: 20px;
+    width: 20vw;
+  }
 }
 #header {
-    height: 12vh;
+  height: 12vh;
 }
-.main-icon{
-   
-    width:40px;
-    height:40px
-}
-
-.navbar-toggler{
-    outline: none !important;
-    border: 0;
-}
-#navcolapse{
-    z-index: 999 !important;
-}
-a.nav-link:not(a.active){
-    color: var(--pink) !important;
-    font-size: 1.6rem;
-    font-family: 'Akaya Kanadaka', cursive;
-    transition: all .4s ease-in-out;
-
-}
-a.nav-link.active{
-    color: black !important;
-    font-size: 1.6rem;
-    font-family: 'Akaya Kanadaka', cursive;
-}
-a.nav-link:not(a.active):hover{
-    color: black !important;
-}
-.togglerIcon{
-    color: var(--pink) !important;
-    font-size: 1.6rem !important;
+.main-icon {
+  width: 40px;
+  height: 40px;
 }
 
-.btncard{
-    border-width: 0.15rem  !important;
-    font-size: 1.1rem !important;
-    transition: all .1s ease-in-out;
-border-radius: .27rem;
-    
+.navbar-toggler {
+  outline: none !important;
+  border: 0;
 }
-.contact_number{
-    font-size: 1.3rem !important;
-    letter-spacing:.1rem
+#navcolapse {
+  z-index: 999 !important;
+}
+a.nav-link:not(a.active) {
+  color: var(--pink) !important;
+  font-size: 1.6rem;
+  font-family: "Akaya Kanadaka", cursive;
+  transition: all 0.4s ease-in-out;
+}
+a.nav-link.active {
+  color: black !important;
+  font-size: 1.6rem;
+  font-family: "Akaya Kanadaka", cursive;
+}
+a.nav-link:not(a.active):hover {
+  color: black !important;
+}
+.togglerIcon {
+  color: var(--pink) !important;
+  font-size: 1.6rem !important;
 }
 
-.btncard:hover{
-  background-color:var(--pink) !important;
+.btncard {
+  border-width: 0.15rem !important;
+  font-size: 1.1rem !important;
+  transition: all 0.1s ease-in-out;
+  border-radius: 0.27rem;
+}
+.contact_number {
+  font-size: 1.3rem !important;
+  letter-spacing: 0.1rem;
+}
+
+.btncard:hover {
+  background-color: var(--pink) !important;
   border-color: var(--pink) !important;
 }
-@media (min-width: 768px) and (max-width:860px){
-    a.nav-link:not(a.active) {
-        font-size: 1.1rem;
-    }
-    a.nav-link.active{
-        font-size: 1.1rem;
-    }
-    .contact_number{
-        font-size: 1.2rem !important;
-        letter-spacing:0rem
-    }
-    .btncard{
-        border-width: 2px  !important;
-        font-size: 1rem !important;
-        
-    }
+@media (min-width: 768px) and (max-width: 860px) {
+  a.nav-link:not(a.active) {
+    font-size: 1.1rem;
+  }
+  a.nav-link.active {
+    font-size: 1.1rem;
+  }
+  .contact_number {
+    font-size: 1.2rem !important;
+    letter-spacing: 0rem;
+  }
+  .btncard {
+    border-width: 2px !important;
+    font-size: 1rem !important;
+  }
 }
 
 /* welcome style */
-.welcome{
-    z-index: 100 !important;
-    /* height: 86vh; */
-    min-height: calc(100vh - 86px);
-    margin-top: 12vh;
-    background:linear-gradient(rgba(0,0,0,.4	),rgba(0,0,0,.4)),url(../images/welcome.jpg)center/cover no-repeat fixed;
+.welcome {
+  z-index: 100 !important;
+  /* height: 86vh; */
+  min-height: calc(100vh - 86px);
+  margin-top: 12vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/welcome.jpg) center/cover no-repeat fixed;
 
-    /* background:url(../images/welcome.jpg); */
-/* 
+  /* background:url(../images/welcome.jpg); */
+  /*
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center; */
-
 }
-.welcome strong{
-    font-size:5rem;
+.welcome strong {
+  font-size: 5rem;
 }
-
-
-
-
-
-
 
 /* welcome style */
-.about_text{
-    font-size: 1.3rem;
+.about_text {
+  font-size: 1.3rem;
 }
-.image_welcome{
-    border: 7px solid yellow;
-    width: 23em;
-    margin: 0 auto;
-    height: 300px;
-    overflow: visible;
- 
+.image_welcome {
+  border: 7px solid yellow;
+  width: 23em;
+  margin: 0 auto;
+  height: 300px;
+  overflow: visible;
 }
 
-@media only screen and (max-width:890px){
-    .image_welcome{
-        border: 7px solid yellow;
-        width: 20em;
-        margin: unset !important;
-        height: 300px;
-      overflow:hidden
-     
-    }
-    .image_welcome img{
-        margin-left: 20px;
-        margin-top: 20px;
-        height: 100%;
-        width: 100%;
-        transition: all 0.3s
-    }
-}
-.image_welcome img{
+@media only screen and (max-width: 890px) {
+  .image_welcome {
+    border: 7px solid yellow;
+    width: 20em;
+    margin: unset !important;
+    height: 300px;
+    overflow: hidden;
+  }
+  .image_welcome img {
     margin-left: 20px;
     margin-top: 20px;
     height: 100%;
     width: 100%;
-    transition: all 0.3s
+    transition: all 0.3s;
+  }
+}
+.image_welcome img {
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
 }
 
-.image_welcome:hover img{
-    margin-left: 0px;
-    margin-top: 0px;
+.image_welcome:hover img {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+/* store */
+#store {
+  background-color: #eee;
+}
+
+.search-icon {
+  background-color: pink !important;
+  cursor: pointer;
 }
 
 
+/* store */
+.img_store{
+height: 300px;
+}
 
+.card{
 
-
-
-
-
-
-
-
-
-
+}
+.img_container{
+overflow: hidden
+}
+.icon_item{
+  bottom: 0;
+  right: 2px;
+  background-color: var(--pink);
+  padding: 7px;
+  color: #eee;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .4s;
+  transform: translate(0px ,40px);
+  cursor: pointer;
+}
+.item{
+  transition: all .4s;
+  overflow:hidden
+}
+.item img{
+transform: scale(1);
+transition: all .4s;
+}
+.item:hover{
+  box-shadow: 0 10px 10px 0px gray;
  
+ 
+  
+}
+.item:hover .icon_item{
+  
+  visibility:visible;
+  opacity: 1;
+  transform: translate(0px ,0px);
+}
+
+.item:hover img{
+  transform: scale(1.3);
+}
