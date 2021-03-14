@@ -206,14 +206,19 @@ overflow: hidden
 }
 .icon_item{
   bottom: 0;
-  right: 2px;
+  right: 0;
   background-color: var(--pink);
-  padding: 7px;
+  /* the best is using rem or em unit */
+  /* padding: 7px; */
+  padding: 0.59rem;
   color: #eee;
-  visibility: hidden;
+  visibility: hidden; 
   opacity: 0;
   transition: all .4s;
-  transform: translate(0px ,40px);
+  /* transform: translate(0px ,40px); */
+  /* this to make icon get from side when hover */
+  transform: translate(100% ,100%);
+
   cursor: pointer;
 }
 .item{
@@ -223,18 +228,27 @@ overflow: hidden
 .item img{
 transform: scale(1);
 transition: all .4s;
+cursor: pointer;
 }
 .item:hover{
-  box-shadow: 0 10px 10px 0px gray;
+  box-shadow: 0 10px 10px 0px black;
  
  
   
 }
 .item:hover .icon_item{
-  
+  border-top-left-radius: .99rem;
   visibility:visible;
   opacity: 1;
   transform: translate(0px ,0px);
+  /* color: black; */
+}
+.item .icon_item i{
+transition: color .9s .3s;
+}
+.item:hover .icon_item i{
+  
+color: black;
 }
 
 .item:hover img{
