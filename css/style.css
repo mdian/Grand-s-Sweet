@@ -254,3 +254,45 @@ color: black;
 .item:hover img{
   transform: scale(1.3);
 }
+
+
+
+/* services */
+.services{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/bg_service.jpg) center/cover no-repeat fixed;
+}
+.icon_service{
+width: 100px;
+height: 100px;
+}
+
+.service-title{
+  font-size: 1.9rem;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+}
+.service_text{
+  word-spacing: 0.5rem;
+}
+
+/* order section */
+
+.info_order{
+ 
+  font-size:18px
+}
+
+
+.order_icon img{
+
+  /* here we cancel this props and put img-fluid class rather then it */
+  /* width: 200px;
+  height: 200px; */
+  opacity: .5;
+}
+
+
+img.active_icon{
+  opacity: 1;
+}
