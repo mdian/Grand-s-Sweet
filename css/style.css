@@ -140,8 +140,34 @@ a.nav-link:not(a.active):hover {
 .welcome strong {
   font-size: 5rem;
 }
-
-/* welcome style */
+.card_order{
+  top:78px;
+  right: 0;
+  width: 18rem;
+  min-height:10rem;
+  transition:all .3s ease-in-out;
+  transform:translateX(300px);
+  background: rgba(255, 255,255, 0.6);
+  overflow: hidden;
+  /* opacity: 0.8; */
+}
+.show{
+  width: 18rem;
+  transform:translateX(0);
+}
+.img_card img{
+width: 50px;
+height: 50px;
+}
+.card-body i{
+  transition: .3s;
+  font-size: 20px;
+}
+.card-body span:hover i{
+color: red;
+cursor: pointer;
+}
+/* end welcome style */
 .about_text {
   font-size: 1.3rem;
 }
@@ -295,4 +321,14 @@ height: 100px;
 
 img.active_icon{
   opacity: 1;
+}
+
+/* footer */
+.icon_contact i{
+  font-size: 1.4rem;
+}
+
+.info_contact_item{
+  font-size: 1.4rem;
+
 }
